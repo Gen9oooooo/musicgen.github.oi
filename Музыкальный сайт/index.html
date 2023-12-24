@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Главная страница</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+     <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+           
+        }
+        .modal-content {
+            background-color: black;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            text-align: center;
+        }
+        .modal-buttons {
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+
+
+
+
+
+
+
+function yes(){
+	alert("Я знаю))");
+	 closeErrorModal();
+                closeModal();
+
+}
+
+
+
+
+	
+
+
+        function openModal() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = "block";
+        }
+
+        function closeModal() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = "none";
+        }
+
+        function showErrorModal() {
+            var errorModal = document.getElementById('errorModal');
+            errorModal.style.display = "block";
+        }
+
+        function closeErrorModal() {
+            var errorModal = document.getElementById('errorModal');
+            errorModal.style.display = "none";
+        }
+
+        function handleNoClick() {
+            showErrorModal();
+        }
+
+        function checkPassword() {
+            var passwordInput = document.getElementById('passwordInput').value;
+            if (passwordInput === '159753GENO') {
+                 alert("Вааау, вы официально не идиот^^");
+                closeErrorModal();
+                closeModal();
+
+            } else {
+                var audio = new Audio('You_Are_an_Idiot.mp3');
+                audio.play();
+                alert("Неверный пароль, вы действительно идиот");
+                closeErrorModal();
+
+
+
+            }
+        }
+</script>
+  </head>
+  <body>
+<div class="start">
+<h1>МузикГено</h1>
+<p>Этот сайт с хорошей музыкой. Буду добавлять треки каждую неделю (стараться). Песни можно скачать нажав на 3 точки и кнопку "Скачать".</p>
+</div>
+<div class="x">
+	<h2>Вайбовая музыка прошлого века</h2>
+<p>Богатырская наша сила</p>
+ <audio controls>
+  <source src="Bogatyrskaya_nasha_sila.mp3 " type="audio/mpeg">
+  Твой Браузер не поддерживает mp3 формат.
+</audio>
+<br>
+<p>Музыка нас связала</p>
+<audio controls>
+<source src="Musicanassvazala.mp3 " type="audio/mpeg">
+</audio><br>
+<p>Не забывай</p>
+ <audio controls>
+<source src="NeZabivay.mp3 " type="audio/mpeg">
+</audio><br>
+<p>Седая ночь</p>
+ <audio controls>
+
+<source src="SedayNoch.mp3 " type="audio/mpeg">
+</audio>
+</div>
+<div class="chart">
+	<div class="ch0">
+	<h2>Чарт Музик</h2>
+	<p>Сюда попала музыка которая более популярна. Либо же она попала сюда чисто случайно).</p>
+	<p>Rubik`s Cube</p>
+<audio controls>
+<source src="Rubiks_Cube.mp3 " type="audio/mpeg">
+	 Твой Браузер не поддерживает mp3 формат.
+</audio>
+<br>
+<p>Money money money</p>
+<audio controls>
+<source src="Money.mp3 " type="audio/mpeg">
+	 Твой Браузер не поддерживает mp3 формат.
+</audio>
+<br>
+<p>Желаю</p>
+<audio controls>
+<source src="Zelayu.mp3" type="audio/mpeg">
+	 Твой Браузер не поддерживает mp3 формат.
+</audio>
+<br>
+<p>Младший лейтенант</p>
+<audio controls>
+<source src="VladshiyLeytenant.mp3" type="audio/mpeg">
+	 Твой Браузер не поддерживает mp3 формат.
+</audio>
+<br>
+<p>Течёт ручей</p>
+<audio controls>
+<source src="TeketRuchey.mp3" type="audio/mpeg">
+	 Твой Браузер не поддерживает mp3 формат.
+</audio>
+<br>
+<p>Ты ж меня пидманула</p>
+<audio controls>
+<source src="TZMP.mp3" type="audio/mpeg">
+	 Твой Браузер не поддерживает mp3 формат.
+</audio>
+<br>
+
+<p>Хоп Мусарок</p>
+<audio controls>
+<source src="HopMycarok.mp3" type="audio/mpeg">
+	 Твой Браузер не поддерживает mp3 формат.
+</audio>
+<br>
+<p>DancingLashaTumbai</p>
+<audio controls>
+<source src="DancingLashaTumbai.mp3 " type="audio/mpeg">
+	 Твой Браузер не поддерживает mp3 формат.
+</audio> 
+</div>
+
+
+<div class="chart1">
+	
+	<p>Moskau</p>
+<audio controls>
+<source src="Moskau.mp3 " type="audio/mpeg">
+	 Твой Браузер не поддерживает mp3 формат.
+</audio>
+<br>
+<p>You Are an Idiot</p>
+<audio controls>
+<source src="You_Are_an_Idiot.mp3 " type="audio/mpeg">
+	 Твой Браузер не поддерживает mp3 формат.
+</audio>
+<br>
+<p>Bella ciao</p>
+<audio controls>
+<source src="Bella_ciao.mp3" type="audio/mpeg">
+	 Твой Браузер не поддерживает mp3 формат.
+</audio>
+<br>
+<p>Bruno Power</p>
+<audio controls>
+<source src="bruno_power.mp3" type="audio/mpeg">
+	 Твой Браузер не поддерживает mp3 формат.
+</audio>
+<br>
+<p>Wenn die Sonja russisch tanzt</p>
+<audio controls>
+<source src="Wenn_die_Sonja_russisch_tanzt.mp3" type="audio/mpeg">
+	 Твой Браузер не поддерживает mp3 формат.
+</audio>
+<br>
+<p>18 (en)</p>
+<audio controls>
+<source src="18.mp3" type="audio/mpeg">
+	 Твой Браузер не поддерживает mp3 формат.
+</audio>
+<br>
+
+<p>MopeMope</p>
+<audio controls>
+<source src="MopeMope.mp3" type="audio/mpeg">
+	 Твой Браузер не поддерживает mp3 формат.
+</audio>
+<br>
+<p>How Do You Do</p>
+<audio controls>
+<source src="How Do You Do.mp3 " type="audio/mpeg">
+	 Твой Браузер не поддерживает mp3 формат.
+</audio>
+</div>
+</div>
+<video src="you are an idiot!.mp4" controls></video>
+
+
+
+<div class="btnn">
+	<button onclick="openModal()">Далее</button>
+</div>
+<div class="randoming">
+<h2>Случайное число:</h2>
+  <h2 id="randomNumber"></h2>
+
+
+  <button onclick="generateRandomNumber()">Сгенерировать</button>
+  </div>
+
+
+  <script>
+  	function stopAudio() {
+  audio.pause();
+  audio.currentTime = 0;
+}
+    function generateRandomNumber() {
+      // Генерация случайного числа от 1 до 100
+      var random = Math.floor(Math.random() * 1000) + 1;
+
+      // Получаем элемент, в который будем выводить случайное число
+      var randomNumberElement = document.getElementById('randomNumber');
+
+      // Выводим случайное число на странице
+      randomNumberElement.textContent = random;
+      if (random == 1000) {
+      	var audio = new Audio('SedayNoch.mp3');
+                audio.play();
+                alert("ВЫ ПОБЕДИЛИ!!! ВЫ СМОГЛИ ПОЛУЧИТЬ ЧИСЛО 1000");
+      }
+    }
+  </script>
+
+ <script>
+function stopAudio() {
+  audio.pause();
+  audio.currentTime = 0;
+}
+    function generateRandomNumber1() {
+      // Генерация случайного числа от 1 до 100
+      var random1 = Math.floor(Math.random() * 20) + 1;
+
+      // Получаем элемент, в который будем выводить случайное число
+      var randomNumberElement1 = document.getElementById('randomNumber1');
+
+      // Выводим случайное число на странице
+      randomNumberElement1.textContent = random1;
+      if (random1 == 1) {
+      
+      	var audio = new Audio('Bogatyrskaya_nasha_sila.mp3 ');
+                audio.play();
+                alert("Будет играть Богатырская наша сила");
+
+      }
+      if (random1 == 2) {
+      
+      	var audio = new Audio('How Do You Do.mp3 ');
+                audio.play(); 
+                 alert("Будет играть How do you do")     
+      }
+      if (random1 == 3) {
+      
+      	var audio = new Audio('Musicanassvazala.mp3  ');
+                audio.play();      
+                 alert("Будет играть Музыка нас связала")
+      }
+      if (random1 == 4) {
+      
+      	var audio = new Audio('NeZabivay.mp3');
+                audio.play();      
+                 alert("Будет играть Не")
+      }
+      if (random1 == 5) {
+      
+      	var audio = new Audio('SedayNoch.mp3');
+      	 alert("Будет играть Седая ночь")
+                audio.play();      
+      }
+      if (random1 == 6) {
+      
+      	var audio = new Audio('Rubiks_Cube.mp3 ');
+                audio.play();      
+       alert("Будет играть Rubiks_Cube")
+   }
+      if (random1 == 7) {
+      
+      	var audio = new Audio('Money.mp3  ');
+                audio.play();      
+       alert("Будет играть Money Money Money")}
+      if (random1 == 8) {
+       alert("Будет играть Желаю")
+      	var audio = new Audio('Zelayu.mp3 ');
+                audio.play();      
+      }
+      if (random1 == 9) {
+       alert("Будет играть Млфдший лейтенант")
+      	var audio = new Audio('VladshiyLeytenant.mp3');
+                audio.play();      
+      }
+      if (random1 == 10) {
+       alert("Будет играть Течёт ручей")
+      	var audio = new Audio('TeketRuchey.mp3 ');
+                audio.play();      
+      }
+      if (random1 == 11) {
+       alert("Будет играть ты ж меня пидманула")
+      	var audio = new Audio('TZMP.mp3 ');
+                audio.play();      
+      }
+      if (random1 == 12) {
+       alert("Будет играть Хоп мусарок")
+      	var audio = new Audio('HopMycarok.mp3 ');
+                audio.play();      
+      }
+      if (random1 == 13) {
+       alert("Будет играть DancingLashaTumbai")
+      	var audio = new Audio('DancingLashaTumbai.mp3 ');
+                audio.play();      
+      }
+      if (random1 == 14) { alert("Будет играть Moskau")
+      
+      	var audio = new Audio('Moskau.mp3 ');
+                audio.play();      
+      }
+      if (random1 == 15) {
+       alert("Будет играть You are an Idiot")
+      	var audio = new Audio('You_Are_an_Idiot.mp3 ');
+                audio.play();      
+      }
+      if (random1 == 16) {
+       alert("Будет играть Bella ciao")
+      	var audio = new Audio('Bella_ciao.mp3');
+                audio.play();      
+      }
+      if (random1 == 17) {
+       alert("Будет играть bruno power")
+      	var audio = new Audio('bruno_power.mp3 ');
+                audio.play();      
+      }
+      if (random1 == 18) {
+       alert("Будет играть Wenn die Sonja russisch tanzt")
+      	var audio = new Audio('Wenn_die_Sonja_russisch_tanzt.mp3 ');
+                audio.play();      
+      }
+      if (random1 == 19) {
+       alert("Будет играть 18 (en)")
+      	var audio = new Audio('18');
+                audio.play();      
+      }
+      if (random1 == 20) {
+       alert("Будет играть MopeMope")
+      	var audio = new Audio('MopeMope.mp3 ');
+                audio.play();      
+      }
+
+    }
+  </script>
+<div class="randoming">
+<h2>Случайная песня:</h2>
+  <h2 id="randomNumber1"></h2>
+    <p>Перед тем как нажать кнопку ещё раз, дослушайте трек до конца или обновите страницу. ЭТО ВАЖНО!!!</p>
+
+  <button onclick="generateRandomNumber1()">Сгенерировать</button>
+  </div>
+
+
+
+<div>
+	<p class="p">Aa <span>Aa</span> Nn <span>Nn</span></p>
+	<p class="p">Bb <span>Bb</span> Oo <span>Oo</span></p>
+	<p class="p">Cc <span>Cc</span> Pp <span>Pp</span></p>
+	<p class="p">Dd <span>Dd</span> Qq <span>Qq</span></p>
+	<p class="p">Ee <span>Ee</span> Rr <span>Rr</span></p>
+	<p class="p">Ff <span>Ff</span> Ss <span>Ss</span></p>
+	<p class="p">Gg <span>Gg</span> Tt <span>Tt</span></p>
+    <p class="p">Hh <span>Hh</span> Uu <span>Uu</span></p>	
+	<p class="p">Ii <span>Ii</span> Vv <span>Vv</span></p>
+	<p class="p">Jj <span>Jj</span> Ww <span>Ww</span></p>
+	<p class="p">Kk <span>Kk</span> Xx <span>Xx</span></p> 
+	<p class="p">Ll <span>Ll</span> Yy <span>Yy</span></p>
+	<p class="p">Mm <span>Mm</span> Zz <span>Zz</span></p>
+	
+</div>
+
+</div>
+
+
+
+
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <p>Ты идиот?</p>
+        <div class="modal-buttons">
+            <button onclick="yes()">Да</button>
+            <button onclick="handleNoClick()">Нет</button>
+        </div>
+    </div>
+</div>
+
+<div id="errorModal" class="modal">
+    <div class="modal-content">
+        <p>Введите пароль:</p>
+        <input type="password" id="passwordInput">
+        <button onclick="checkPassword()">OK</button>
+    </div>
+</div>
+
+
+  </body>
+</html>
+
+
+<span>HELLO. MY NAME IS GASTER (W.D.GASTER) I AM HERE.</span>
+<br>
+На этом сайте вся музыка не моя и я не её автор, тоже самое и с видео, мой тут только дизайн, оформление и код.
